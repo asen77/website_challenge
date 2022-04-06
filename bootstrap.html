@@ -11,6 +11,27 @@
   </head>
   <body>
 
+    <div id="my-container">
+        <p id="my-message">some placeholder content</p>
+      </div>
+      <script type="text/javascript">
+
+        // select elements from the DOM by specifying their unique identifiers:
+        var myDiv = document.getElementById("my-container")
+        var myParagraph = document.getElementById("my-message")
+        console.log(myParagraph.innerText)
+      
+        // manipulate properties of an element:
+       // myParagraph.innerHTML = "Fun times!"
+       // myParagraph.style.color = "red"
+      
+        // can even create new elements:
+        //var myHeading = document.createElement("h3")
+       // myHeading.innerHTML = "This is a heading"
+       // myDiv.appendChild(myHeading)
+      
+      </script>      
+
     <!--
       BOOTSTRAP ALERTS
       https://getbootstrap.com/docs/5.0/components/alerts/#dismissing
@@ -87,7 +108,6 @@
         <button class="btn btn-primary" id="click-me">Click Me</button>
         <p style="display:inline">Click Count: <span id="click-count">(loading)</span></p>
       </div>
-
       <!--
         BOOTSTRAP FORM
         https://getbootstrap.com/docs/5.0/forms/overview/
